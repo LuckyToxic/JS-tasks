@@ -1,108 +1,117 @@
-// let score = +prompt('Введите ваше колличество балов :')
+const car = {
+    stamp : 'Kia',
+    release : 2020 ,
+    color : 'Blue'
+}
 
-// let result = (score >= 60) ? 'Вы сдали экзамен,так держать!' : 'Вы не сдали,нужно больше стараться!'
+car.startTheEngine = function() {
+    console.log(`${car.stamp} is starting the engine`)
+}
 
-// alert(result)
-
-
-
-
-// let age = +prompt('Введите ваш возраст :')
-
-// let result = (age < 18) ? 'Вы несовершеннолетний!' : (age >=18 && age <=65 ) ? 'Вы взрослый!' : 'Вы пожилой человек!'
-
-// alert(result)
+car.startTheEngine()
 
 
 
 
 
-// let number = +prompt('Введите ваше число :')
+const user = {
+    name: "John",
+    age: 25 ,
+    addres: "St.Tulpanov 1/1"
+}
 
-// let result = (number % 2 == 0 && number > 0) ? 'Число четное и положительное!' : 'Ваше число не подходит!'
+user.age = 21
 
-// alert(result)
-
-
-
-
-
-// let choice = prompt('Выберите ваш напиток : кофе , чай , сок :')
-
-// switch(choice){
-//      case 'кофе' :
-//          alert('Ваш выбор сегодня пал на кофе,хорошего дня!')
-//          break
-//      case 'чай' :
-//          alert('Ваш выбор сегодня пал на чай,хорошего дня!') 
-//          break
-//      case 'сок' :
-//          alert('Ваш выбор сегодня пал на сок,хорошего дня!')
-//          break
-//      default:
-//          alert('Такого напитка нет в перечни!')           
-// }
+console.log(user)
 
 
 
 
+const book = {
+    title: "Пересмешник",
+    author: "Алексей Пехов",
+    release: 2009
+}
 
-// let long = +prompt('Введите расстояние до точки назначения :')
+let { title,author,release} = book
 
-// let result = (long < 5) ? 'Не желайте пройти это расстояние пешком?' : (long >= 5 && long < 20) ? 'Вы можете воспользоваться велосипедом' : 'Воспользуйтесь автобусом!'
-
-// alert(result)
-
-
-
-
-
-// let num1 = +prompt('Введите первое число :')
-
-// let num2 = +prompt('Введите второе число :')
-
-// let result = (`${num1}` < `${num2}`) ? 'Ваше второе заданое число больше первого!' : (`${num1}` > `${num2}`) ? 'Ваше первое заданое число больше второго!' : 'Ошибка!'
-
-// alert(result)
+titleX.innerText = (`Название: ${title}`)
+authorX.innerText = (`Автор: ${author}`)
+releaseX.innerText = (`Год издания: ${release}`)
 
 
 
+const animal = {
+    makeAsound(){
+        console.log(`Animal make a sound`)
+    }
+}
 
-
-// let score = +prompt('Введите ваш балл по тесту :')
-
-// let result = (score <= 100 && score >= 90) ? 'Отлично!' : (score < 90 && score >= 70) ? 'Хорошо!' : (score <70 && score > 0) ? 'Удовлетворительно!' : 'Оценка производится от 0 до 100!'
-
-// alert(result)
-
-
-
-
-
-// let num = +prompt('Введите ваше число для проверки на четность :')
-
-// let result = (num % 2 == 0) ? 'Ваше число является четным!' : 'Ваше число является нечетным!'
-
-// alert(result)
+animal.makeAsound()
 
 
 
+car.color = 'Red'
 
-// let lang = prompt('Какой язык для общения : английский или французкий')
+console.log(car)
 
-// let result = ( lang == 'английский' ) ? 'Hello!' : (lang == 'французкий') ? 'Bonjour!' : 'Ошибка!'
 
-// alert(result)
+
+const product = {
+    title: "Батончик",
+    price: "100 руб",
+    quantity: 10
+}
+
+product.quantity =(product.quantity + 5)
+
+console.log(product)
 
 
 
 
-// let month = prompt('Введите месяц года :')
+const computer = {
+    computerOn(){
+        console.log(`The computer is turned on`)
+    }
+}
 
-// let result = (month == 'декабрь' || month == 'январь' || month == 'февраль') 
-//     ? 'Это один из месяцов зимы!' : (month == 'март' || month == 'апрель' || month == 'май') 
-//     ? 'Это один из меяцов весны!' : (month == 'июнь' || month == 'июль' || month == 'август') 
-//     ? 'Это отличный летний месяц!' : (month == 'сентябрь' || month == 'октябрь' || month == 'ноябрь') 
-//     ? 'Это дождливый осений месяц!' : 'Это явно не месяц года!'
+computer.computerOn()
 
-// alert(result)
+
+
+
+user.addres = "St.Demokraticheskaya"
+
+console.log(user)
+
+
+
+
+const fruit = {
+    peelTheFruit(){
+        console.log(`The fruit is peeled`)
+    }
+}
+
+fruit.peelTheFruit()
+
+
+
+
+let { name,age,addres} = user
+
+nameX.innerText = (`Имя пользователя: ${name}`)
+ageX.innerText = (`Возраст пользователя: ${age}`)
+addresX.innerText = (`Адресс пользователя: ${addres}`) 
+
+
+
+
+const city = {
+    title: "Сочи",
+    population: 446599 ,
+    country: "Россия"
+}
+
+console.log(city)
