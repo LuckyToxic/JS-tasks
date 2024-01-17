@@ -98,12 +98,9 @@ fruit.peelTheFruit()
 
 
 
-
-let { name,age,addres} = user
-
-nameX.innerText = (`Имя пользователя: ${name}`)
-ageX.innerText = (`Возраст пользователя: ${age}`)
-addresX.innerText = (`Адресс пользователя: ${addres}`) 
+for(key in user){
+    console.log(key)
+}
 
 
 
